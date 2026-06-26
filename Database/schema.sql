@@ -1,4 +1,3 @@
--- Create table
 CREATE TABLE players (
     id SERIAL PRIMARY KEY,
     username VARCHAR(50) UNIQUE NOT NULL,
@@ -9,7 +8,6 @@ CREATE TABLE players (
     score INT DEFAULT 0
 );
 
--- Sample data
 INSERT INTO players (username, password, wins, losses, draws, score)
 VALUES
 ('fathy', '123', 0, 0, 0, 0),
